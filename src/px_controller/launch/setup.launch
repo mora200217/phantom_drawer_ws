@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="px_controller" type="moveRobot" name="move_controller" output="screen"/> 
+    <node pkg="px_controller" type="homeConfig" name="homer" output="screen"/> 
+</launch>
