@@ -1,8 +1,8 @@
 <launch>
   <!-- Argumentos -->
   <arg name="model" default="$(find px_robot)/urdf/px_collision.urdf"/>
-  <arg name="gui" default="false" />
-  <arg name="rvizconfig" default="$(find px_robot)/config/config.rviz" />
+
+  <arg name="rvizconfig" default="$(find px_planner)/config/config.rviz" />
   
   <!-- Carga el robot -->
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
@@ -13,23 +13,16 @@
   name="robot_state_publisher" 
   pkg="robot_state_publisher" 
   type="robot_state_publisher" />
+
   
-  <!-- Carga el manejador de juntas -->
-  <node if="$(arg gui)" 
-  name="joint_state_publisher" 
-  pkg="joint_state_publisher_gui" 
-  type="joint_state_publisher_gui" />
-  
-  <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-   <rosparam param="source_list">["joint_states_custom"]</rosparam>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+        <rosparam param="source_list">["joint_states_custom"]</rosparam>
   </node>
 
+<!-- Services     -->
   <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen"/> 
   <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen"/> 
   <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen"/> 
 
-  <!-- Carga Rvix con config -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
-  <!-- <node name="rviz" pkg="rviz" type="rviz" /> -->
-
 </launch>
