@@ -11,6 +11,7 @@
 // Functions 
 void pxIkinem(float x, float y, float z, float* config); 
 bool pxIkinemSrv(px_planner::ikinem::Request &req, px_planner::ikinem::Response &res); 
+float norm(float L1, float L2); 
 
 px_controller::moveRobot srv; 
 ros::ServiceClient move; 
@@ -84,38 +85,32 @@ bool pxIkinemSrv(px_planner::ikinem::Request &req, px_planner::ikinem::Response 
 */
 void pxIkinem(float x, float y, float z, float* config){
     // All distances are in Centimeters 
-    const float L1 = 9.0;  
-    const float L2 = 10.5f; 
-    const float L3 = 10.0f; 
-    const float L4 = 11.0f; 
-    const float L5 = 5.0f; 
+    const float L0 = 5.02;  
+    const float L1 = 4.2;  
+    const float L21 = 10.3; 
+    const float L22 = 3.7; 
+    const float L3 = 9.8f; 
+    const float L4 = 11.4f; // TCP distance from last joint 
+    const float L5 = 5.0f; // Marker height 
 
-    float xp, yp, zp; 
-    // EE conversion from cosntraints
-    float r = sqrt(pow(x, 2) + pow(y,2));
-    float r_new = r - L4;  
+    float L2 = norm(L21, L22); 
+    float gamma = atan2(L22, L21); 
 
-    xp = x * (r_new / r); 
-    yp = y * (r_new / r); 
-    zp = z + L5; // High effector 
+    float q1, q2, q3, q4; // Joints for 4R 
+    q1 = atan2(y, x); // most ez one :v 
 
+    // Solve a 2R for the q2 and q3 joints 
+    float y_2r = z + L5 - (L0 + L1); 
+    float x_2r = sqrt(pow(x, 2) + pow(y, 2)) - L4; 
 
-    float q1, q2, q3, q4; // robot joints  (4R); 
-    q1 = atan2(y, x); 
+    // Angles w/o transformations
+    float c3 = (pow(x_2r, 2) + pow(y_2r, 2) - pow(L2, 2) - pow(L3, 2)) / (2 * L2 * L3); 
+    q3 = atan2(sqrt(1 - pow(c3, 2)), c3); 
+    q2 = atan2(x_2r, y_2r) - atan2(L3 * sin(q3), L2 + L3 * cos(q3)); 
 
-    // Solution for 2R config in q2 and q3 for (xp, yp, zp)
-    float x_2r = sqrt(pow(xp ,2) + pow(yp, 2)); 
-    float z_2r = zp; 
-
-    // cosine theorem
-    float c2 = (pow(x_2r, 2) + pow(z_2r, 2) - pow(L2, 2) - pow(L3, 2)) / (2 * L2 * L3); 
-    q3 = PI/2  - atan2(sqrt(1 - pow(c2, 2)), c2); 
-
-    q2 = atan2(x_2r, z_2r) - atan2(L3 * sin(q3), L2 + L3 * cos(q3)); 
-    q2 = q2 - PI/6; // TODO: use real measurements 
-
-    float gamma = q2  - (PI/2 - q3);
-    q4 = -(PI/2 - gamma); // condition for planar movement.
+    q2 = -(q2 - gamma); 
+    q3 = -(q3 - PI/2); 
+    q4 = -q2 - q3;  // to change 
 
     // 
     *(config) = q1; 
@@ -124,3 +119,8 @@ void pxIkinem(float x, float y, float z, float* config){
     *(config + 3) = q4; 
 }
 
+
+
+float norm(float L1, float L2){
+    return sqrt(pow(L1, 2)  + pow(L2, 2)); 
+}

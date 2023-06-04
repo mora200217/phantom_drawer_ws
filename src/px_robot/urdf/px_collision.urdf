@@ -59,7 +59,7 @@
   </link>
 
   <joint name="joint_1" type="revolute">
-    <origin xyz="0.0 0.0 0.09" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
     <parent link="base_link"/>
     <child link="link1"/>
     <axis xyz="0 0 1"/>
@@ -121,7 +121,7 @@
   </link>
 
   <joint name="joint_3" type="revolute">
-    <origin xyz="0.05 0.1065 0" rpy="0.0 0.0 -1.5707"/>
+    <origin xyz="0.037 0.103 0" rpy="0.0 0.0 -1.5707"/>
     <parent link="link2"/>
     <child link="link3"/>
     <axis xyz="0 0 1"/>
@@ -152,7 +152,7 @@
   </link>
 
   <joint name="joint_4" type="revolute">
-    <origin xyz="0.0 0.1065 0" rpy="0.0 0.0 0.0"/>
+    <origin xyz="0.0 0.098 0" rpy="0.0 0.0 0.0"/>
     <parent link="link3"/>
     <child link="link4"/>
     <axis xyz="0 0 1"/>
@@ -162,7 +162,7 @@
   <link name="tcp_link"></link>
 
   <joint name="tcp" type="fixed">
-    <origin xyz="0.0 0.092 0" rpy="-1.5707 0.0 0.0"/>
+    <origin xyz="0.0 0.0114 0" rpy="-1.5707 0.0 0.0"/>
     <parent link="link4"/>
     <child link="tcp_link"/>
   </joint>
