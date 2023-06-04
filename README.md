@@ -18,6 +18,11 @@ Start the nodes.
 ```bash
 $ roslaunch px_planner check_ikinem.launch
 ```
+
+<p align="center">
+  <img width="60%" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/rviz_config.png" /> 
+</p>
+
 After rviz has been initizalizated correctly, you can call the ikinem service in order to vizualize the config for the desiredpose of the end-effector. 
 
 ```bash
