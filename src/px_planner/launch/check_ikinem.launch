@@ -23,6 +23,7 @@
   <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen"/> 
   <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen"/> 
   <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen"/> 
+  <node pkg="px_controller" type="gripperController" name="gripper_controller" output="screen"/> 
 
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 </launch>

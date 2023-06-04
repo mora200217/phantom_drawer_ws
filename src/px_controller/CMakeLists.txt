@@ -60,6 +60,7 @@ add_service_files(
    pxIkinem.srv
    home.srv
    moveRobot.srv
+   gripperPose.srv
   #  Service2.srv
  )
 
@@ -142,6 +143,7 @@ include_directories(
 add_executable(ikinem_node src/px_ikinem.cpp)
 add_executable(homeConfig src/homeConfig.cpp)
 add_executable(moveRobot src/moveRobot.cpp)
+add_executable(gripperController src/gripperController.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -154,6 +156,8 @@ add_executable(moveRobot src/moveRobot.cpp)
 add_dependencies(ikinem_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(homeConfig ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(moveRobot ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(gripperController ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(ikinem_node
@@ -163,6 +167,9 @@ target_link_libraries(homeConfig
   ${catkin_LIBRARIES}
 )
 target_link_libraries(moveRobot
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(gripperController
   ${catkin_LIBRARIES}
 )
 
