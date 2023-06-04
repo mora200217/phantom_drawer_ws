@@ -13,12 +13,17 @@ To activate the robot use `/dynamixel_workbench` to open the `JointTrajectory` t
 $ roslaunch px_robot px_controllers.launch
 ```
 
-## How to use the px_ikinem_calculator
+## How to vizualize different positions with rviz 
+Start the nodes. 
+```bash
+$ roslaunch px_planner check_ikinem.launch
+```
+After rviz has been initizalizated correctly, you can call the ikinem service in order to vizualize the config for the desiredpose of the end-effector. 
 
-
-## How it displays the robot position in RVIZ
-
-
-
-
+```bash
+$ rosservice call /px_ikinem "desiredPosition:
+  x: 13.0
+  y: 21.0
+  z: 0"
+```
 
