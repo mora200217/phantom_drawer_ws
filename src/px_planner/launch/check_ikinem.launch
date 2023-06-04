@@ -1,8 +1,9 @@
 <launch>
   <!-- Argumentos -->
   <arg name="model" default="$(find px_robot)/urdf/px_collision.urdf"/>
-
   <arg name="rvizconfig" default="$(find px_planner)/config/config.rviz" />
+  <arg name="show_rviz" default="false" />
+  <arg name="console_gui" default="true" />
   
   <!-- Carga el robot -->
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
@@ -20,10 +21,24 @@
   </node>
 
 <!-- Services     -->
-  <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen"/> 
-  <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen"/> 
-  <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen"/> 
-  <node pkg="px_controller" type="gripperController" name="gripper_controller" output="screen"/> 
+<group unless="$(arg console_gui)"> 
+    <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen"/> 
+    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen"/> 
+    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen"/> 
+    <node pkg="px_controller" type="gripperController" name="gripper_controller" output="screen"/> 
+</group> 
 
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+<group if="$(arg console_gui)"> 
+    <node pkg="px_controller" type="moveRobot" name="move_robot_controller"/> 
+    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller"/> 
+    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator"/> 
+    <node pkg="px_controller" type="gripperController" name="gripper_controller"/> 
+</group> 
+
+
+  <node pkg="px_controller" type="gripperTranslator" name="gripper_translator"/> 
+  <node if="$(arg console_gui)" pkg="px_controller" type="guiController" name="gripper_gui" output="screen"/> 
+
+
+  <node if="$(arg show_rviz)" name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 </launch>
