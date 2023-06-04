@@ -1,19 +1,19 @@
 // px_ikinem.cpp
 
 #include "ros/ros.h"
-#include "px_planner/ikinem.h"
+#include "px_msgs/ikinem.h"
 #include "visualization_msgs/Marker.h"
-#include "px_controller/moveRobot.h"
+#include "px_msgs/moveRobot.h"
 
 // defines 
 #define PI 3.1415
 
 // Functions 
 void pxIkinem(float x, float y, float z, float* config); 
-bool pxIkinemSrv(px_planner::ikinem::Request &req, px_planner::ikinem::Response &res); 
+bool pxIkinemSrv(px_msgs::ikinem::Request &req, px_msgs::ikinem::Response &res); 
 float norm(float L1, float L2); 
 
-px_controller::moveRobot srv; 
+px_msgs::moveRobot srv; 
 ros::ServiceClient move; 
 ros::Publisher markerPub;
 
@@ -23,7 +23,7 @@ int main(int argc, char**argv){
     
     ros::ServiceServer myServer = nh.advertiseService("px_ikinem", pxIkinemSrv); 
     
-    move = nh.serviceClient<px_controller::moveRobot>("/moveRobot"); 
+    move = nh.serviceClient<px_msgs::moveRobot>("/moveRobot"); 
     markerPub = nh.advertise<visualization_msgs::Marker>("/desired_pos", 100); 
     
     ROS_INFO("Inverse kinematics service ready."); 
@@ -31,7 +31,7 @@ int main(int argc, char**argv){
     return 1; 
 }
 
-bool pxIkinemSrv(px_planner::ikinem::Request &req, px_planner::ikinem::Response &res){
+bool pxIkinemSrv(px_msgs::ikinem::Request &req, px_msgs::ikinem::Response &res){
     const int n_joints = 5; 
     float* config = (float * ) malloc(sizeof(float) * n_joints); 
 

@@ -5,7 +5,7 @@
 #include <iostream>
 
 #include "gui_arm.h"
-#include "px_controller/home.h"
+#include "px_msgs/home.h"
 #include "trajectory_msgs/JointTrajectory.h"
 #include "std_msgs/Float32.h"
 char key(' ');
@@ -24,7 +24,7 @@ int main(int argc, char**argv){
     ros::NodeHandle n; 
 
     // Create services 
-    homeSrv = n.serviceClient<px_controller::home>("/goHome"); 
+    homeSrv = n.serviceClient<px_msgs::home>("/goHome"); 
 
     // create publishers 
     gripperPublisher = n.advertise<std_msgs::Float32>("/gripper_state", 1000); 
@@ -60,7 +60,7 @@ int main(int argc, char**argv){
         break;
 
     case 'h':
-        px_controller::home homeSrvReq; 
+        px_msgs::home homeSrvReq; 
         homeSrv.call(homeSrvReq); 
         break;
     }

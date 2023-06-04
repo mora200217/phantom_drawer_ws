@@ -1,10 +1,10 @@
 #include "ros/ros.h"
-#include "px_controller/moveRobot.h"
+#include "px_msgs/moveRobot.h"
 
 #include "trajectory_msgs/JointTrajectory.h"
 #include "sensor_msgs/JointState.h"
 
-bool moveMyRobot(px_controller::moveRobot::Request &req, px_controller::moveRobot::Response &res ); 
+bool moveMyRobot(px_msgs::moveRobot::Request &req, px_msgs::moveRobot::Response &res ); 
 
 ros::Publisher configPublisher; 
 ros::Publisher rvizConfigPublisher; 
@@ -24,7 +24,7 @@ int main(int argc, char** argv){
 }
 
 
-bool moveMyRobot(px_controller::moveRobot::Request &req, px_controller::moveRobot::Response &res ){
+bool moveMyRobot(px_msgs::moveRobot::Request &req, px_msgs::moveRobot::Response &res ){
     float q1 = req.config.q1; 
     float q2 = req.config.q2; 
     float q3 = req.config.q3; 

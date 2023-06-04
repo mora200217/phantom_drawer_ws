@@ -1,8 +1,8 @@
 #include "ros/ros.h"
-#include "px_controller/pxIkinem.h"
+#include "px_msgs/pxIkinem.h"
 
-bool calculate_ikinem(px_controller::pxIkinem::Request &req, 
-                      px_controller::pxIkinem::Response &res); 
+bool calculate_ikinem(px_msgs::pxIkinem::Request &req, 
+                      px_msgs::pxIkinem::Response &res); 
 
 int main(int argc, char** argv){
     ros::init(argc, argv, "ikinem_calculator"); 
@@ -14,8 +14,8 @@ int main(int argc, char** argv){
     return 1; 
 }
 
-bool calculate_ikinem(px_controller::pxIkinem::Request &req, 
-                      px_controller::pxIkinem::Response &res){
+bool calculate_ikinem(px_msgs::pxIkinem::Request &req, 
+                      px_msgs::pxIkinem::Response &res){
 
     // End effector position 
     float x = req.position.x; 

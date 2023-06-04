@@ -2,8 +2,8 @@
   <!-- Argumentos -->
   <arg name="model" default="$(find px_robot)/urdf/px_collision.urdf"/>
   <arg name="rvizconfig" default="$(find px_planner)/config/config.rviz" />
-  <arg name="show_rviz" default="false" />
-  <arg name="console_gui" default="true" />
+  <arg name="show_rviz" default="true" />
+  <arg name="console_gui" default="false" />
   
   <!-- Carga el robot -->
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
