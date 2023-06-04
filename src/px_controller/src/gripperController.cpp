@@ -19,7 +19,7 @@ int main(int argc, char** argv){
     move = nh.serviceClient<px_msgs::moveRobot>("moveRobot"); 
 
     // Create service 
-    ros::ServiceServer gripperServer = nh.advertiseService("setGripper", setGripper); 
+    ros::ServiceServer gripperServer = nh.advertiseService("/setGripper", setGripper); 
     ROS_INFO("Service created"); 
     ros::spin(); 
     

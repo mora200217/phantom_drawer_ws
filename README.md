@@ -26,7 +26,7 @@ $ roslaunch px_planner check_ikinem.launch
 After rviz has been initizalizated correctly, you can call the ikinem service in order to vizualize the config for the desiredpose of the end-effector. 
 
 ```bash
-$ rosservice call /px_ikinem "desiredPosition:
+$ rosservice call /px_planner/px_ikinem "desiredPosition:
   x: 13.0
   y: 21.0
   z: 0"

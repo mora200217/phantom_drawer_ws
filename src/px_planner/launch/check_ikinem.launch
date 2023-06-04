@@ -22,21 +22,21 @@
 
 <!-- Services     -->
 <group unless="$(arg console_gui)"> 
-    <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen"/> 
-    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen"/> 
-    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen"/> 
-    <node pkg="px_controller" type="gripperController" name="gripper_controller" output="screen"/> 
+    <node pkg="px_controller" type="moveRobot" name="move_robot_controller" output="screen" ns="px_controller"/> 
+    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" output="screen" ns="px_controller"/> 
+    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" output="screen" ns="px_planner"/> 
+    <node pkg="px_controller" type="gripperController" name="gripper_controller" output="screen" /> 
 </group> 
 
 <group if="$(arg console_gui)"> 
-    <node pkg="px_controller" type="moveRobot" name="move_robot_controller"/> 
-    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller"/> 
-    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator"/> 
-    <node pkg="px_controller" type="gripperController" name="gripper_controller"/> 
+    <node pkg="px_controller" type="moveRobot" name="move_robot_controller" ns="px_controller"/> 
+    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" ns="px_controller"/> 
+    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" ns="px_planner"/> 
+    <node pkg="px_controller" type="gripperController" name="gripper_controller" /> 
 </group> 
 
 
-  <node pkg="px_controller" type="gripperTranslator" name="gripper_translator"/> 
+  <node pkg="px_controller" type="gripperTranslator" name="gripper_translator" ns="px_controller"/> 
   <node if="$(arg console_gui)" pkg="px_controller" type="guiController" name="gripper_gui" output="screen"/> 
 
 

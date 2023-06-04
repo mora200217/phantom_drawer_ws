@@ -40,13 +40,13 @@ bool moveMyRobot(px_msgs::moveRobot::Request &req, px_msgs::moveRobot::Response 
     trajectoryMessage.joint_names.push_back("joint_2"); 
     trajectoryMessage.joint_names.push_back("joint_3"); 
     trajectoryMessage.joint_names.push_back("joint_4"); 
-    trajectoryMessage.joint_names.push_back("joint_5"); 
+    // trajectoryMessage.joint_names.push_back("joint_5"); 
 
 
     // Create Joint Trajectroy Point 
     trajectory_msgs::JointTrajectoryPoint trajectoryPoint; 
     trajectoryPoint.time_from_start = ros::Duration(0.7); 
-    trajectoryPoint.positions = {q1, q2, q3, q4, q5}; 
+    trajectoryPoint.positions = {q1, q2, q3, q4}; 
 
     trajectoryMessage.points = {trajectoryPoint}; 
     // Send information 
