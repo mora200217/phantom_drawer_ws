@@ -37,8 +37,9 @@
 
 
   <node pkg="px_controller" type="gripperTranslator" name="gripper_translator" ns="px_controller"/> 
+  <node pkg="px_planner" type="ikinem_calculator_service" name="ikinem_calculator_service" ns="px_planner"/> 
   <node if="$(arg console_gui)" pkg="px_controller" type="guiController" name="gripper_gui" output="screen"/> 
 
-
+  <node pkg="px_controller" type="btnHome" name="btn_home" ns="px_controller"/> 
   <node if="$(arg show_rviz)" name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 </launch>

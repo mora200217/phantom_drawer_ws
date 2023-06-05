@@ -147,6 +147,7 @@ add_executable(moveRobot src/moveRobot.cpp)
 add_executable(gripperController src/gripperController.cpp)
 add_executable(guiController src/gui_arm.cpp)
 add_executable(gripperTranslator src/gripperJoint.cpp)
+add_executable(btnHome src/get_button.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -162,6 +163,7 @@ add_dependencies(moveRobot ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED
 add_dependencies(gripperController ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(guiController ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(gripperTranslator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(btnHome ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
@@ -181,6 +183,9 @@ target_link_libraries(guiController
   ${catkin_LIBRARIES}
 )
 target_link_libraries(gripperTranslator
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(btnHome
   ${catkin_LIBRARIES}
 )
 
