@@ -53,6 +53,7 @@ add_message_files(
    FILES
    pxConfig.msg
    pxConfigVector.msg
+   pedroPascal.msg
 )
 
 ## Generate services in the 'srv' folder

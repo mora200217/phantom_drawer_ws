@@ -148,6 +148,10 @@ target_link_libraries(create_path ${catkin_LIBRARIES})
 add_executable(ikinem_calculator_service src/px_ikinem_calculator.cpp)
 add_dependencies(ikinem_calculator_service ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ikinem_calculator_service ${catkin_LIBRARIES})
+
+add_executable(pose_translator src/px_pose_translator.cpp)
+add_dependencies(pose_translator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(pose_translator ${catkin_LIBRARIES})
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
