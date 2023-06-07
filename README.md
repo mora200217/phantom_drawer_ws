@@ -58,6 +58,7 @@ Como primer paso se realizo toda la cinematica directa del brazo para luego pasa
 
 ## Imagenes HMI-Rutinas Script- Resultado Final
 
+En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi como las rutinas generadas en matlab para obtener el arreglo de puntos que representaba la trayectoria realizada asim como el resultado final hecho por el brazo Phantom-X.
 
 * Imagen HMI
 <p align="center">
