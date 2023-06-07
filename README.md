@@ -64,7 +64,7 @@ Dht
 <img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
 </p> 
 
-* Rutinas Matlab
+* Rutinas Matlab *
 
 - Workspace
 <p align="center">
