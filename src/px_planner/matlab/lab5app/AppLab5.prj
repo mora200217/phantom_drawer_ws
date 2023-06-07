@@ -1,0 +1,87 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2043681639" file="/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/lab5app/AppLab5.prj" location="/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/lab5app" name="AppLab5" target="target.mlapps" target-name="Package App">
+    <param.appname>AppLab5</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>/private/var/folders/h1/zw_7vp_539bd392psmp2rnjh0000gn/T/tp6dc770d3_103f_468f_91d8_43aea2a3a44b.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>a05fb2fe-28d8-4113-9b17-f6856cdc158f</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/AppLab5.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/Circulo.PNG</file>
+      <file>${PROJECT_ROOT}/LogoUNAL.png</file>
+      <file>${PROJECT_ROOT}/M.PNG</file>
+      <file>${PROJECT_ROOT}/N.PNG</file>
+      <file>${PROJECT_ROOT}/Z.PNG</file>
+      <file>${PROJECT_ROOT}/circleReal.jpeg</file>
+      <file>${PROJECT_ROOT}/defaultpicture.jpeg</file>
+      <file>${PROJECT_ROOT}/defaultplot.jpeg</file>
+      <file>${PROJECT_ROOT}/mReal.jpeg</file>
+      <file>${PROJECT_ROOT}/nReal.jpeg</file>
+      <file>${PROJECT_ROOT}/rectangulo.PNG</file>
+      <file>${PROJECT_ROOT}/squareReal.jpeg</file>
+      <file>${PROJECT_ROOT}/workspace.PNG</file>
+      <file>${PROJECT_ROOT}/wsReal.jpeg</file>
+      <file>${PROJECT_ROOT}/zReal.jpeg</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab" name="lab5app" optional="false">/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/lab5app</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2022b.app</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>12.6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

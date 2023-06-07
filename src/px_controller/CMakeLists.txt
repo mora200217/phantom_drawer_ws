@@ -148,6 +148,8 @@ add_executable(gripperController src/gripperController.cpp)
 add_executable(guiController src/gui_arm.cpp)
 add_executable(gripperTranslator src/gripperJoint.cpp)
 add_executable(btnHome src/get_button.cpp)
+add_executable(matlab src/px_pose_to_srv.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -164,6 +166,7 @@ add_dependencies(gripperController ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_
 add_dependencies(guiController ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(gripperTranslator ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(btnHome ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(matlab ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
@@ -186,6 +189,9 @@ target_link_libraries(gripperTranslator
   ${catkin_LIBRARIES}
 )
 target_link_libraries(btnHome
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(matlab
   ${catkin_LIBRARIES}
 )
 

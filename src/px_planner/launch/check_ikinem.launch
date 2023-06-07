@@ -44,5 +44,7 @@
 
   <node pkg="px_controller" type="btnHome" name="btn_home" ns="px_controller"/> 
   <node pkg="px_planner" type="pose_translator" name="pose_translator_node" ns="px_planner" output="screen" /> 
+  <node pkg="px_controller" type="matlab" name="matlab_translator" ns="px_controller" output="screen" /> 
+  
   <node if="$(arg show_rviz)" name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 </launch>
