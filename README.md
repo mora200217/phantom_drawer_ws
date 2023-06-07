@@ -63,7 +63,6 @@ Se usó ROS para definir un stack de servicios y topicos que permitan:
 
 El archivo `px_planner/check_ikinem` con los parámetros `show_rviz` y `console_gui` permite mostrar la configuración actual del phantom en rviz y tener una gui en la terminal para mover el gripper y posicionar a la posición de home. 
 
-## 
 
 ## Imagenes HMI-Rutinas Script- Resultado Final
 
