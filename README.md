@@ -48,7 +48,7 @@ Quinto laboratorio de la asignatura de Robótica de la Universidad Nacional de C
 
 
 ## Planteamiento del Problema 
-Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplicando la cinematica inversa del mismo.
+Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplicando la cinematica inversa del mismo y que estos procesos se logren visualizar en una HMI.
  
 ## Descripción e la solución planteada
 
@@ -66,5 +66,7 @@ Dht
 
 
 ## Analisis y resultados de la verificacion dimensional
+
+
 
 
