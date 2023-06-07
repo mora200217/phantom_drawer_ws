@@ -67,6 +67,20 @@ Dht
 
 ## Analisis y resultados de la verificacion dimensional
 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+</p> 
 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+</p> 
+
+Se debe verificar las dimensiones, calidad de trazo, rectitud, radio y homogeneidad de todos los trazos.
+• Escoja e implemente una metodolog´ıa para medir la precisi´on de los trazos.
+• Tome imagenes de los trazos y comp´arelas digitalmente con im´agenes de las trayectorias ideales.
+• Analice si el trazo es igual haciendo m´ultiples rutinas de escritura descargando y cargando la herramienta.
+
+
+Como se ve en la anterior figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas.
 
 
