@@ -68,11 +68,11 @@ Dht
 ## Analisis y resultados de la verificacion dimensional
 
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z_sola.jpeg" width="60%"/> 
 </p> 
 
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/imagen%20Z-superpuesta_lab5_robotica.PNG" width="60%"/> 
 </p> 
 
 
