@@ -52,7 +52,7 @@ Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplic
  
 ## Descripción e la solución planteada
 
-Dht
+Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa...
 
 Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
 
@@ -65,17 +65,89 @@ El archivo `px_planner/check_ikinem` con los parámetros `show_rviz` y `console_
 
 ## 
 
-## Imagenes HMI
+## Imagenes HMI-Rutinas Script- Resultado Final
 
+En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi como las rutinas generadas en matlab para obtener el arreglo de puntos que representaba la trayectoria realizada asim como el resultado final hecho por el brazo Phantom-X.
+
+* Imagen HMI
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
 </p> 
+
+* Rutinas Matlab
+
+- Workspace
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/workspace.PNG" width="50%"/> 
+</p> 
+- Rectangulo
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/rectangulo.PNG" width="50%"/> 
+</p> 
+-Circulo
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Circulo.PNG" width="50%"/> 
+</p> 
+-Letra N
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/N.PNG" width="50%"/> 
+</p> 
+-Letra M
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/M.PNG" width="50%"/> 
+</p> 
+-Letra Z 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z.PNG" width="50%"/> 
+</p> 
+- Letra L
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/L.PNG" width="50%"/> 
+</p> 
+- Workspace Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Workspace_real.jpeg" width="50%"/> 
+</p> 
+- Rectangulo Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Rectangulo_real.jpeg" width="50%"/> 
+</p> 
+- Circulo Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Circulo_real%20(1).jpeg" width="50%"/> 
+</p> 
+- Letra N Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/N_real.jpeg" width="50%"/> 
+</p> 
+- Letra M Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/M_real.jpeg" width="50%"/> 
+</p> 
+- Letra Z Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z_real.jpeg" width="50%"/> 
+</p> 
+- Letra L Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/L_real.jpeg" width="50%"/> 
+</p> 
+
 
 ## Video resumen completo laboratorio
 
 
 ## Analisis y resultados de la verificacion dimensional
 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z_sola.jpeg" width="60%"/> 
+</p> 
 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/imagen%20Z-superpuesta_lab5_robotica.PNG" width="60%"/> 
+</p> 
+
+
+Como se ve en la primera figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas.
 
 
