@@ -50,8 +50,21 @@ Quinto laboratorio de la asignatura de Robótica de la Universidad Nacional de C
 ## Planteamiento del Problema 
 Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplicando la cinematica inversa del mismo.
  
-## Desarrollo 
+## Descripción e la solución planteada
+
+Dht
 
 
+
+## Imagenes HMI
+
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+</p> 
+
+## Video resumen completo laboratorio
+
+
+## Analisis y resultados de la verificacion dimensional
 
 
