@@ -137,6 +137,7 @@ En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi c
 
 ## Video resumen completo laboratorio
 
+*
 
 ## Analisis y resultados de la verificacion dimensional
 
