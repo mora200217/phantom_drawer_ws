@@ -72,7 +72,7 @@ En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi c
 
 * Imagen HMI
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/HMI.PNG" width="50%"/> 
 </p> 
 
 * Rutinas Matlab
