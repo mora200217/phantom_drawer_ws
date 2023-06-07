@@ -1,4 +1,4 @@
-## Getting started 
+
 Clone this workspace (WS) and compile the packages either using catkin_make or catkin build. 
 ```bash
 $ catkin build
@@ -36,4 +36,22 @@ $ rosservice call /px_planner/px_ikinem "desiredPosition:
   y: 21.0
   z: 0"
 ```
+
+# Laboratorio #5 Robótica
+Quinto laboratorio de la asignatura de Robótica de la Universidad Nacional de Colombia 2023-i.
+
+
+**Integrantes**: 
+* Nelson David Ramírez Marín
+* Andrés Zuleta 
+* Andrés Morales Martínez
+
+
+## Planteamiento del Problema 
+Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplicando la cinematica inversa del mismo.
+ 
+## Desarrollo 
+
+
+
 
