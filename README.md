@@ -52,9 +52,7 @@ Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplic
  
 ## Descripción e la solución planteada
 
-Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa...
-
-Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
+Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa. Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
 
 Se usó ROS para definir un stack de servicios y topicos que permitan: 
 - Ajustar la posición del gripper [Servicio] 
@@ -74,7 +72,7 @@ En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi c
 
 * Imagen HMI
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/HMI.PNG" width="50%"/> 
 </p> 
 
 * Rutinas Matlab
@@ -139,6 +137,7 @@ En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi c
 
 ## Video resumen completo laboratorio
 
+*
 
 ## Analisis y resultados de la verificacion dimensional
 
@@ -151,6 +150,6 @@ En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi c
 </p> 
 
 
-Como se ve en la primera figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas.
+Como se ve en la primera figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas y la mismas caracteristicas se presentaron para las demas figuras trabajadas o en otras palabras presentaban los mismos patrones correspondientes.
 
 
