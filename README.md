@@ -52,9 +52,7 @@ Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplic
  
 ## Descripción e la solución planteada
 
-Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa...
-
-Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
+Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa. Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
 
 Se usó ROS para definir un stack de servicios y topicos que permitan: 
 - Ajustar la posición del gripper [Servicio] 
