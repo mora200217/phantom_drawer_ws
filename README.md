@@ -59,7 +59,7 @@ Dht
 ## Imagenes HMI-Rutinas Script- Resultado Final
 
 <p align="center">
-<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
 </p> 
 
 ## Video resumen completo laboratorio
@@ -76,6 +76,6 @@ Dht
 </p> 
 
 
-Como se ve en la anterior figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas.
+Como se ve en la primera figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas.
 
 
