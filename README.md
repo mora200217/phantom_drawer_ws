@@ -56,7 +56,7 @@ Dht
 
 
 
-## Imagenes HMI
+## Imagenes HMI-Rutinas Script- Resultado Final
 
 <p align="center">
 <img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="60%"/> 
