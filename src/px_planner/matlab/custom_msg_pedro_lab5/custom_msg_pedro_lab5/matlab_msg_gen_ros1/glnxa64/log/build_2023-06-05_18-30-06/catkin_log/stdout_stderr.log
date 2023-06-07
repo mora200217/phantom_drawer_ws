@@ -1,0 +1,182 @@
+[0/1] Re-running CMake...
+-- Using CATKIN_DEVEL_PREFIX: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel
+-- Using CMAKE_PREFIX_PATH: /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2023a/toolbox/ros/mlroscpp/custom_messages;/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install;/home/nelsondrm/catkin_ws/src/matlab_msg_gen_ros1/glnxa64/install
+-- This workspace overlays: /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2023a/toolbox/ros/mlroscpp/custom_messages;/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install;/home/nelsondrm/catkin_ws/src/matlab_msg_gen_ros1/glnxa64/install
+-- Using PYTHON_EXECUTABLE: /home/nelsondrm/.matlab/R2023a/ros1/glnxa64/venv/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /home/nelsondrm/.matlab/R2023a/ros1/glnxa64/venv/lib/python3.8/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: off
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 2 packages in topological order:
+-- ~~  - alv
+-- ~~  - px_msgs
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'alv'
+-- ==> add_subdirectory(alv)
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: geneus
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  alv/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: genlisp
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  alv/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: gennodejs
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  alv/CMakeLists.txt:20 (find_package)
+
+
+-- Using these message generators: gencpp;genpy
+-- alv: 1 messages, 0 services
+-- +++ processing catkin package: 'px_msgs'
+-- ==> add_subdirectory(px_msgs)
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: geneus
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: genlisp
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: gennodejs
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+-- Using these message generators: gencpp;genpy
+-- px_msgs: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build
+ninja: no work to do.
+[1/3] cd /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build/alv && /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/nelsondrm/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py alv /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/src/alv/msg/pedroPascal.msg geometry_msgs/Vector3
+[2/3] cd /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build/px_msgs && /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/nelsondrm/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /usr/local/MATLAB/R2023a/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py px_msgs /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/src/px_msgs/msg/pedroPascal.msg geometry_msgs/Vector3
+[2/3] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/_setup_util.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/env.sh
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/setup.bash
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/local_setup.bash
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/setup.sh
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/local_setup.sh
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/setup.zsh
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/local_setup.zsh
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/.rosinstall
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/msg/pedroPascal.msg
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/cmake/alv-msg-paths.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/alv
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/alv/pedroPascal.h
+Listing '/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/alv'...
+Listing '/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/alv/msg'...
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/__init__.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/__pycache__
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/__pycache__/__init__.cpython-38.pyc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg/__init__.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg/_pedroPascal.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg/__pycache__
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg/__pycache__/__init__.cpython-38.pyc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/alv/msg/__pycache__/_pedroPascal.cpython-38.pyc
+-- Installing: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/pkgconfig/alv.pc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/cmake/alv-msg-extras.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/cmake/alvConfig.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/cmake/alvConfig-version.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/alv/package.xml
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/alv
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/alv/visibility_control.h
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/libalv_matlab.so
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m/
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+alv
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+alv/pedroPascal.m
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+alv
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+alv/pedroPascal.m
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/msg/pedroPascal.msg
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/cmake/px_msgs-msg-paths.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/px_msgs
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/px_msgs/pedroPascal.h
+Listing '/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/px_msgs'...
+Listing '/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/px_msgs/msg'...
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/__init__.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/__pycache__
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/__pycache__/__init__.cpython-38.pyc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg/__init__.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg/_pedroPascal.py
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg/__pycache__
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg/__pycache__/__init__.cpython-38.pyc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/px_msgs/msg/__pycache__/_pedroPascal.cpython-38.pyc
+-- Installing: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/pkgconfig/px_msgs.pc
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/cmake/px_msgs-msg-extras.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/cmake/px_msgsConfig.cmake
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/cmake/px_msgsConfig-version.cmake
+-- Installing: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/share/px_msgs/package.xml
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/px_msgs
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/include/px_msgs/visibility_control.h
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/lib/libpx_msgs_matlab.so
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m/
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs/pedroPascal.m
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+px_msgs
+-- Up-to-date: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+px_msgs/pedroPascal.m
+Base path: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64
+Source space: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/src
+Build space: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build
+Devel space: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/devel
+Install space: /home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/install
+####
+#### Running command: "ninja build.ninja" in "/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build"
+####
+####
+#### Running command: "ninja install install -j8 -l8" in "/home/nelsondrm/Documentos/Matlab_lab5/custom_msg_pedro_lab5/matlab_msg_gen_ros1/glnxa64/build"
+####

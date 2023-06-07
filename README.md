@@ -54,7 +54,16 @@ Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplic
 
 Dht
 
+Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
 
+Se usó ROS para definir un stack de servicios y topicos que permitan: 
+- Ajustar la posición del gripper [Servicio] 
+- Calcular la configuracion para cierta pose del efector [Servicio] 
+- Mover el efector final a una posición en el espacio diestro [Servicio]
+
+El archivo `px_planner/check_ikinem` con los parámetros `show_rviz` y `console_gui` permite mostrar la configuración actual del phantom en rviz y tener una gui en la terminal para mover el gripper y posicionar a la posición de home. 
+
+## 
 
 ## Imagenes HMI
 

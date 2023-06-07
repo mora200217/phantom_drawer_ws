@@ -12,7 +12,7 @@ float norm(float L1, float L2);
 void pxIkinem(float x, float y, float z, float* config); 
 
 ros::Publisher trajectoryPublisher; 
-
+float MOVEMENT_SPEED; 
 void callback(const px_msgs::pedroPascal::ConstPtr& msg){
     
     ROS_INFO_STREAM("data: " << msg -> positions[0]); 
@@ -22,39 +22,43 @@ void callback(const px_msgs::pedroPascal::ConstPtr& msg){
 
     // Position 1 
     
-    geometry_msgs::Vector3 pos = msg -> positions[0]; 
-    float* config = (float*) malloc(sizeof(float) * 4); 
-    pxIkinem(pos.x, pos.y, pos.z, config); 
+
+    int n = msg.get()->positions.size(); 
+    ROS_INFO("amount of data: %i", n); 
+
 
     trajectory_msgs::JointTrajectory trajectory; 
     trajectory.header.stamp = ros::Time::now(); 
     trajectory.joint_names = {"joint_1", "joint_2","joint_3","joint_4"}; 
 
-    
+    float const _DELTA_TIME = 0.05; 
+    for(int j = 0; j < n; j++){
+        geometry_msgs::Vector3 pos = msg -> positions[j]; 
+        float* config = (float*) malloc(sizeof(float) * 4); 
+        pxIkinem(pos.x, pos.y, pos.z, config); 
+        trajectory_msgs::JointTrajectoryPoint point; // Create single point 
+        
+        point.time_from_start = ros::Duration(1.2 + _DELTA_TIME * (j + 1)); // s 
 
+        point.positions.clear();
+        point.positions.resize(4); // amount of joints   
 
-    trajectory_msgs::JointTrajectoryPoint point; 
-    
-    point.time_from_start = ros::Duration(0.7); // s 
+        for(int i = 0; i < 4; i++){
+            point.positions.at(i) = *(config + i); 
+        }
 
-    point.positions.clear();
-    point.positions.resize(4);  
-
-    for(int i = 0; i < 4; i++){
-        point.positions.at(i) = *(config + i); 
+        trajectory.points.push_back(point); 
     }
-
-    trajectory.points.push_back(point); 
-    ROS_INFO_STREAM("point: " << point); 
+    ROS_INFO_STREAM("trajectory: " << trajectory);
     trajectoryPublisher.publish(trajectory); // sending to topic /joint_trajectory
-    
-
 
 }
 
 int main(int argc, char** argv){
     ros::init(argc, argv, "pose_translator"); 
     ros::NodeHandle n; 
+
+    
     ros::Subscriber sub = n.subscribe("/matlab_positions", 101, callback); 
     trajectoryPublisher = n.advertise<trajectory_msgs::JointTrajectory>("/joint_trajectory", 1000); 
     ros::spin(); 

@@ -1,4 +1,5 @@
 <launch>
+
   <!-- Argumentos -->
   <arg name="model" default="$(find px_robot)/urdf/px_collision.urdf"/>
   <arg name="rvizconfig" default="$(find px_planner)/config/config.rviz" />
@@ -8,6 +9,7 @@
   <!-- Carga el robot -->
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
   <param name="source" command="$(find xacro)/xacro $(arg model)"/>
+  <param name="movement_speed" value="0.7"/>
 
   <!-- Carga el servidor de parametros para publicar el estado del rebot -->
   <node 
