@@ -58,9 +58,70 @@ Dht
 
 ## Imagenes HMI-Rutinas Script- Resultado Final
 
+
+* Imagen HMI
 <p align="center">
 <img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
 </p> 
+
+* Rutinas Matlab
+- Workspace
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Rectangulo
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+-Circulo
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+-Letra N
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+-Letra M
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+-Letra Z 
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Letra L
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Workspace Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Rectangulo Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Circulo Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Letra N Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Letra M Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Letra Z Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+- Letra L Real
+<p align="center">
+<img margin="auto" src="https://github.com/mora200217/wireless-phantom-ros-controller/blob/master/imgs/dhparams.png" width="50%"/> 
+</p> 
+
 
 ## Video resumen completo laboratorio
 
