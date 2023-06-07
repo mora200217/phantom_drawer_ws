@@ -52,7 +52,7 @@ Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplic
  
 ## Descripción e la solución planteada
 
-Dht
+Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa...
 
 
 
