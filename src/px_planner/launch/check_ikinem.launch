@@ -5,6 +5,7 @@
   <arg name="rvizconfig" default="$(find px_planner)/config/config.rviz" />
   <arg name="show_rviz" default="true" />
   <arg name="console_gui" default="false" />
+  <arg name="node_start_delay" default="2"/> 
   
   <!-- Carga el robot -->
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
@@ -16,6 +17,13 @@
   name="robot_state_publisher" 
   pkg="robot_state_publisher" 
   type="robot_state_publisher" />
+
+  <!-- Cargar el bridge -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="output" value="log"/>
+  </include>
+
+  <node name="server" pkg="px_gui" type="server.py" output="log" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/> 
 
   
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >

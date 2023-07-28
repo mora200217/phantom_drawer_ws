@@ -44,7 +44,7 @@ int main(int argc, char** argv){
 
     // Clients 
     client = n.serviceClient<px_msgs::ikinem>("/px_planner/px_ikinem"); 
-    clientGripper = n.serviceClient<px_msgs::ikinem>("/setGripper"); 
+    clientGripper = n.serviceClient<px_msgs::gripperPose>("/setGripper"); 
 
     ros::spin(); 
     return 0; 

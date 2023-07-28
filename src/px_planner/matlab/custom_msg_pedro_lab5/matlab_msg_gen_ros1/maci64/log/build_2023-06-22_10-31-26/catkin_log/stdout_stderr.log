@@ -1,0 +1,115 @@
+[0/1] Re-running CMake...
+-- Using CATKIN_DEVEL_PREFIX: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/devel
+-- Using CMAKE_PREFIX_PATH: /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1;/Applications/MATLAB_R2022b.app/toolbox/ros/mlroscpp/custom_messages
+-- This workspace overlays: /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1;/Applications/MATLAB_R2022b.app/toolbox/ros/mlroscpp/custom_messages
+-- Using PYTHON_EXECUTABLE: /Users/amoralesma/.matlab/R2022b/ros1/maci64/venv/bin/python3
+-- Using default Python package layout
+-- Using empy: /Users/amoralesma/.matlab/R2022b/ros1/maci64/venv/lib/python3.9/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: off
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - px_msgs
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'px_msgs'
+-- ==> add_subdirectory(px_msgs)
+CMake Warning at /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: geneus
+Call Stack (most recent call first):
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: genlisp
+Call Stack (most recent call first):
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: gennodejs
+Call Stack (most recent call first):
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  px_msgs/CMakeLists.txt:20 (find_package)
+
+
+-- Using these message generators: gencpp;genpy
+-- px_msgs: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build
+ninja: no work to do.
+[1/2] cd /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build/px_msgs && /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build/catkin_generated/env_cached.sh /Users/amoralesma/.matlab/R2022b/ros1/maci64/venv/bin/python3 /Applications/MATLAB_R2022b.app/sys/ros1/maci64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py px_msgs /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/src/px_msgs/msg/pedroPascal.msg geometry_msgs/Vector3
+[1/2] Install the project...
+-- Install configuration: "Release"
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/_setup_util.py
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/env.sh
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/setup.bash
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/local_setup.bash
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/setup.sh
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/local_setup.sh
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/setup.zsh
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/local_setup.zsh
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/.rosinstall
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/msg/pedroPascal.msg
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/cmake/px_msgs-msg-paths.cmake
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/include/px_msgs
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/include/px_msgs/pedroPascal.h
+Listing '/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/devel/lib/python3.9/site-packages/px_msgs'...
+Listing '/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/devel/lib/python3.9/site-packages/px_msgs/msg'...
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg/__init__.py
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg/__pycache__
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg/__pycache__/__init__.cpython-39.pyc
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg/__pycache__/_pedroPascal.cpython-39.pyc
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/msg/_pedroPascal.py
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/__init__.py
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/__pycache__
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/python3.9/site-packages/px_msgs/__pycache__/__init__.cpython-39.pyc
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/pkgconfig/px_msgs.pc
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/cmake/px_msgs-msg-extras.cmake
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/cmake/px_msgsConfig.cmake
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/cmake/px_msgsConfig-version.cmake
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/share/px_msgs/package.xml
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/include
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/include/px_msgs
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/include/px_msgs/visibility_control.h
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/lib/libpx_msgs_matlab.dylib
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m/
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros/+custommessages
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs/homeRequest.m
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs/pedroPascal.m
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+internal/+ros/+custommessages/+px_msgs/homeResponse.m
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+msggen
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+msggen/+px_msgs
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+msggen/+px_msgs/homeRequest.m
+-- Up-to-date: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+msggen/+px_msgs/pedroPascal.m
+-- Installing: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install/m//+ros/+msggen/+px_msgs/homeResponse.m
+Base path: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64
+Source space: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/src
+Build space: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build
+Devel space: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/devel
+Install space: /Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/install
+####
+#### Running command: "ninja build.ninja" in "/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build"
+####
+####
+#### Running command: "ninja install install -j8 -l8" in "/Users/amoralesma/Documents/UN/robotica/labs/phantom_drawer/src/px_planner/matlab/custom_msg_pedro_lab5/matlab_msg_gen_ros1/maci64/build"
+####
