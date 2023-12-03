@@ -1,0 +1,3 @@
+[submodule "src/px_neuron/axis-streamer"]
+	path = src/px_neuron/axis-streamer
+	url = https://github.com/sojamo/axis-streamer.git
