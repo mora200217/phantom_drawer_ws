@@ -37,119 +37,30 @@ $ rosservice call /px_planner/px_ikinem "desiredPosition:
   z: 0"
 ```
 
-# Laboratorio #5 Robótica
-Quinto laboratorio de la asignatura de Robótica de la Universidad Nacional de Colombia 2023-i.
+## How to use the perception neuron 
+In the package `px_neuron` you will find the axis-streamer submodule. Begin installing the required modules. 
+
+```
+$ yarn install # or npm install
+```
+
+Then, open two terminal windows. In the first one, lets launch the `perception.launch` file, which will build up the whole archiqueture of the system. 
+
+> Remember to update the network configuration, by exporting ROS_IP and ROS_MASTER_URI. see http://wiki.ros.org/ROS/NetworkSetup for more information 
+
+In the second terminal, run 
+```
+$ yarn run with --mode stream
+```
+
+This will open the webserver for vizualizing the BVH from axis neuron, and open the broadcasting routine for publishing to rostopic from roslibjs. (A connected alert should appear if everything is alright). 
+
+I
 
 
-**Integrantes**: 
-* Nelson David Ramírez Marín
-* Andrés Zuleta 
-* Andrés Morales Martínez
 
 
-## Planteamiento del Problema 
-Se busca generar figuras, letras y otras funcionalidades con el Phantom X, aplicando la cinematica inversa del mismo y que estos procesos se logren visualizar en una HMI.
- 
-## Descripción e la solución planteada
-
-Como primer paso se realizo toda la cinematica directa del brazo para luego pasar a obtener su cinematica inversa. Se encontró el modelo geómetrico inverso bajo la condicion de una orientación de la herramienta horizontal, para poder garantizar una correcta escritura en el tablero con el marcador.
-
-Se usó ROS para definir un stack de servicios y topicos que permitan: 
-- Ajustar la posición del gripper [Servicio] 
-- Calcular la configuracion para cierta pose del efector [Servicio] 
-- Mover el efector final a una posición en el espacio diestro [Servicio]
-
-El archivo `px_planner/check_ikinem` con los parámetros `show_rviz` y `console_gui` permite mostrar la configuración actual del phantom en rviz y tener una gui en la terminal para mover el gripper y posicionar a la posición de home. 
-
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/rosgraph.png" width="50%"/> 
-</p> 
 
 
-## Imagenes HMI-Rutinas Script- Resultado Final
-
-En esta seccion se muestra como fue el diseño de la interfaz final de HMI asi como las rutinas generadas en matlab para obtener el arreglo de puntos que representaba la trayectoria realizada asim como el resultado final hecho por el brazo Phantom-X.
-
-* Imagen HMI
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/HMI.PNG" width="50%"/> 
-</p> 
-
-* Rutinas Matlab
-
-- Workspace
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/workspace.PNG" width="50%"/> 
-</p> 
-- Rectangulo
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/rectangulo.PNG" width="50%"/> 
-</p> 
--Circulo
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Circulo.PNG" width="50%"/> 
-</p> 
--Letra N
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/N.PNG" width="50%"/> 
-</p> 
--Letra M
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/M.PNG" width="50%"/> 
-</p> 
--Letra Z 
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z.PNG" width="50%"/> 
-</p> 
-- Letra L
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/L.PNG" width="50%"/> 
-</p> 
-- Workspace Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Workspace_real.jpeg" width="50%"/> 
-</p> 
-- Rectangulo Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Rectangulo_real.jpeg" width="50%"/> 
-</p> 
-- Circulo Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Circulo_real%20(1).jpeg" width="50%"/> 
-</p> 
-- Letra N Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/N_real.jpeg" width="50%"/> 
-</p> 
-- Letra M Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/M_real.jpeg" width="50%"/> 
-</p> 
-- Letra Z Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z_real.jpeg" width="50%"/> 
-</p> 
-- Letra L Real
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/L_real.jpeg" width="50%"/> 
-</p> 
-
-
-## Video resumen completo laboratorio
-
-* https://youtu.be/5ChEtEmsMyY
-
-## Analisis y resultados de la verificacion dimensional
-
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/Z_sola.jpeg" width="60%"/> 
-</p> 
-
-<p align="center">
-<img margin="auto" src="https://github.com/mora200217/phantom_drawer_ws/blob/master/imgs/imagen%20Z-superpuesta_lab5_robotica.PNG" width="60%"/> 
-</p> 
-
-
-Como se ve en la primera figura la calidad de trazo es muy constante aunque no es totalmente fina y los trazos no son completamente horizontales o diagonales, entonces superponiendo la letra "Z" ideal y generada se ve que la diagonal de letra tiene mayor longitud que sus segmentos horizontales y tiene una ligera curvatura cuando va a realizar el ultimo segmento y ademas se identifico que el trazo seguia siendo consistente ejecutando multiples rutinas y la mismas caracteristicas se presentaron para las demas figuras trabajadas o en otras palabras presentaban los mismos patrones correspondientes.
 
 
