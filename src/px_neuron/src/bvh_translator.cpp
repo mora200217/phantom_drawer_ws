@@ -30,13 +30,13 @@ void callback(const px_neuron_msg::hand_poses::ConstPtr& msg){
     float handY = msg -> RightHand.y; 
     float handZ = msg -> RightHand.z; 
 
-    float foreX = msg -> RightForeArm.x; 
-    float foreY = msg -> RightForeArm.y; 
-    float foreZ = msg -> RightForeArm.z; 
+    float foreX = msg -> RightArm.x; 
+    float foreY = msg -> RightArm.y; 
+    float foreZ = msg -> RightArm.z; 
 
-    float deltaX = std::max(std::min(handX - foreX, (float) 15.0), (float) 8); 
-    float deltaY = std::max(std::min(handY - foreY, (float) 15.0), (float) -10); 
-    float deltaZ = std::max(std::min(handZ - foreZ, (float) 15.0), (float) 10); 
+    float deltaX = std::max(std::min(handY - foreY, (float) 17.0), (float) 9.0); 
+    float deltaY = std::max(std::min(-handZ + foreZ, (float) -10.0), (float) -10); 
+    float deltaZ = std::max(std::min(handX - foreX, (float) 17.0), (float) 8); 
 
     const int n_joints = 5; 
     float* config = (float * ) malloc(sizeof(float) * n_joints); 
@@ -49,8 +49,11 @@ void callback(const px_neuron_msg::hand_poses::ConstPtr& msg){
     float q4 = *(config + 3); 
     
     // Calculate distance 
-    gripperOpening = dist(rhiX, rhiY, rhiZ, rhtX, rhtY, rhtZ)/5.0 - 2.0 ; 
-    gripperOpening = std::max(std::min(gripperOpening, (float) 2.0), (float) 0.5);
+    gripperOpening = dist(rhiX, rhiY, rhiZ, rhtX, rhtY, rhtZ);
+    if(gripperOpening >= 8.0) 
+    gripperOpening = 2;
+    else
+     gripperOpening = 0;
   
     // Movement 
     
