@@ -1,0 +1,45 @@
+<launch>
+    <!-- Argumentos -->
+    <arg name="model" default="$(find px_robot)/urdf/px_collision.urdf"/>
+  <arg name="console_gui" default="true" />
+  <arg name="node_start_delay" default="2"/> 
+  
+
+
+  <!-- Carga el servidor de parametros para publicar el estado del rebot -->
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+  <param name="source" command="$(find xacro)/xacro $(arg model)"/>
+  <param name="movement_speed" value="0.7"/>
+  <node 
+  name="robot_state_publisher" 
+  pkg="robot_state_publisher" 
+  type="robot_state_publisher" />
+
+  <!-- Cargar el bridge -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="output" value="log"/>
+  </include>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+        <rosparam param="source_list">["joint_states_custom"]</rosparam>
+  </node>
+
+<group if="$(arg console_gui)"> 
+    <node pkg="px_controller" type="moveRobot" name="move_robot_controller" ns="px_controller"/> 
+    <node pkg="px_controller" type="homeConfig" name="home_move_robot_controller" ns="px_controller"/> 
+    <node pkg="px_planner" type="ikinem_calculator" name="ikinem_calculator" ns="px_planner"/> 
+    <node pkg="px_controller" type="gripperController" name="gripper_controller" /> 
+</group> 
+
+
+  <node pkg="px_controller" type="gripperTranslator" name="gripper_translator" ns="px_controller"/> 
+  <node pkg="px_planner" type="ikinem_calculator_service" name="ikinem_calculator_service" ns="px_planner"/> 
+  <node if="$(arg console_gui)" pkg="px_controller" type="guiController" name="gripper_gui" output="screen"/> 
+
+  <node pkg="px_controller" type="btnHome" name="btn_home" ns="px_controller"/> 
+  <node pkg="px_planner" type="pose_translator" name="pose_translator_node" ns="px_planner" output="screen" /> 
+
+  <node pkg="px_neuron" type="bvh_receiver"  name="bhv_receiver_neuron" ns="px_neuron" /> 
+  <node pkg="px_neuron" type="bvh_translator"  name="bhv_translator_neuron" ns="px_neuron" output="screen"/> 
+
+</launch>
