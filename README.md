@@ -37,7 +37,7 @@ $ rosservice call /px_planner/px_ikinem "desiredPosition:
   z: 0"
 ```
 
-## How to use the perception neuron 
+## How to use the perception neuron 
 In the package `px_neuron` you will find the axis-streamer submodule. Begin installing the required modules. 
 
 ```
